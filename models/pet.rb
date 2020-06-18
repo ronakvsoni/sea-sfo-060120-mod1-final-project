@@ -7,7 +7,14 @@ class Pet < ActiveRecord::Base
     end
     def listpet
     
-       puts Pet.all
+       Pet.all.each do |pet|
+        puts <<-info
+         Name #{pet.name},
+         City #{pet.city},
+        Breed: #{pet.breed},
+        Age: #{pet.age}
+        info
+       end
     end
 
    

@@ -10,7 +10,10 @@ while(true)
     elsif choice == "2"
         app.createcustomer
     elsif choice == "3"
-        app.
+        app.updatecust
+    elsif choice == "4"
+        app.deletecust
+   
     elsif choice == "0"
         break
     end

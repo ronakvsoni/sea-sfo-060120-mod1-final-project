@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 2020_06_16_235556) do
 
   create_table "customers", force: :cascade do |t|
     t.string "name"
+    t.string "email_adress"
+    t.integer "phone_number"
   end
 
   create_table "pets", force: :cascade do |t|

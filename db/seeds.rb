@@ -25,18 +25,21 @@ b=Pet.new
 b.createpet("rocky","Portland","husky",7)
 puts Pet.all
 
-ronak = Customer.create(name: "Ronak")
-james = Customer.create(name: "James")
-santa = Customer.create(name: "Santa")
-paris = Customer.create(name: "Paris")
-olivia = Customer.create(name: "Olivia")
-cristina = Customer.create(name: "Cristina")
+ronak = Customer.create(name: "Ronak",email_adress: "ronak@gmail.com",phone_number: 476537876)
+james = Customer.create(name: "James",email_adress: "ronak@gmail.com",phone_number: 476537876)
+santa = Customer.create(name: "Santa",email_adress: "ronak@gmail.com",phone_number: 476537876)
+paris = Customer.create(name: "Paris",email_adress: "ronak@gmail.com",phone_number: 476537876)
+olivia = Customer.create(name: "Olivia",email_adress: "ronak@gmail.com",phone_number: 476537876)
+cristina = Customer.create(name: "Cristina",email_adress: "ronak@gmail.com",phone_number: 476537876)
 
  c = Customer.new
 
  c.createcustomer("gallu")
+ 
  puts Customer.all
+
  c.updatecustomer("gallu","gallunew")
+ 
  findc = c.readcustomer("gallunew")
  puts findc
  puts  Customer.all
