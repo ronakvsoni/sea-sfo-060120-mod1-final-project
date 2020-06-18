@@ -1,20 +1,53 @@
-House.destroy_all
-Sorting.destroy_all
-Student.destroy_all
+Adoption.destroy_all
+Customer.destroy_all
+Pet.destroy_all
 
-ravenclaw = House.create(name: "Ravenclaw",
-  ghost: "The Grey Lady",
-   motto: "Or yet in wise old Ravenclaw, If you've a ready mind, Where those of wit and learning, Will always find their kind",
-  points: 150)
-hufflepuff = House.create(name: "Hufflepuff", 
-  ghost: "The Fat Friar",
-   motto: "You might belong in hufflepuff, Where they are just and loyal, Those patient Hufflepuffs are true and unafraid of toil",
-  points: 150)
-gryffindor = House.create(name: "Gryffindor", 
-  ghost: "Nearly Headless Nick",
-   motto: "You might belong in Gryffindor, Where dwell the brave at heart, Their daring, nerve and chivarly Set Gryffindors apart",
-  points: 150)
-slytherin = House.create(name: "Slytherin", 
-  ghost: "The Bloody Baron",
-   motto: "Or perhaps in Slytherin You'll make your real friends, Those cunning fold use any means to achieve their ends",
-  points: 150)
+
+mini = Pet.create(name: "Mini",
+                  city: "Kirkland",
+                  breed: "lab",
+                  age: 8)
+cieser = Pet.create(name: "Cieser",
+                     city: "Kirkland",
+                     breed: "Golden retriever",
+                     age:8)
+ bruno = Pet.create(name: "Bruno",
+                     city: "San Francisco",
+                     breed: "pug",
+                     age:6)
+    
+ lady = Pet.create(name: "Lady",
+                    city: "Seattle",
+                    breed: "St.Bernard",
+                    age: 4)
+
+b=Pet.new
+b.createpet("rocky","Portland","husky",7)
+puts Pet.all
+
+ronak = Customer.create(name: "Ronak")
+james = Customer.create(name: "James")
+santa = Customer.create(name: "Santa")
+paris = Customer.create(name: "Paris")
+olivia = Customer.create(name: "Olivia")
+cristina = Customer.create(name: "Cristina")
+
+ c = Customer.new
+
+ c.createcustomer("gallu")
+ puts Customer.all
+ c.updatecustomer("gallu","gallunew")
+ findc = c.readcustomer("gallunew")
+ puts findc
+ puts  Customer.all
+
+ c.deletecustomer("Ronak")
+ puts Customer.all
+ findc = c.readcustomer("Ronak")
+ puts findc
+
+
+ adoptiontable = Adoption.create(pet_id: 109,customer_id:180 )
+puts "seeds done!!!"
+
+

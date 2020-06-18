@@ -4,21 +4,21 @@
 - <Attach github link here>
 
 ## Project Idea/Misson
-- Brief summary of your project.
+-A user can search pets by breed and can adopt by multiple pet agency,
 
 ## Domain
-| Student | Sorting | House |
+| Pets | Adoption application | customer |
 | ---- | ---- | ----- |
-| name: string     | house_id    | name    |
-| hometown:string  | sorting_id  | ghost   |
-| age:integer      |             | motto   |
-| points:integer   |             |         |
-
+| name: string     | pet_id           | name    |
+| city:string  | customer_id    |   customer_id     |
+| breed:string      |                  |                    |
+| age:integer     |                  |          |
+|ownwer_contact:integer|
 ## User Story ( At least 4)
-1. Create
-2. Read
-3. Update
-4. Delete
+1. Create(new pet adoption application)    
+2. Read (petslist)
+3. Update(informatin change)
+4. Delete(if the pet is adopted )
 
 ## Stretch Goals
 -
