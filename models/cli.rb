@@ -22,10 +22,16 @@ def listofpets
 end            
 
 def createcustomer
-    puts "Enter name of customer"
+    puts "Enter your name"
     name = gets.chomp
     c=Customer.new
     c.createcustomer(name)
 end
+
+def newname
+    puts "please tell me your new name"
+    name =gets.chomp
+    a=Customer.new
+    a.
 
 end

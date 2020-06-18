@@ -9,6 +9,8 @@ while(true)
         app.listofpets
     elsif choice == "2"
         app.createcustomer
+    elsif choice == "3"
+        app.
     elsif choice == "0"
         break
     end
