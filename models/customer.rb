@@ -7,7 +7,10 @@ class Customer < ActiveRecord::Base
     end
 
     def updatecustomer(oldname,newname)
+    
         cust = Customer.where(name:oldname)
+        
+    
         cust.update(name:newname)
     end
 
